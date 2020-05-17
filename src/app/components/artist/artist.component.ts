@@ -1,16 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit } from "@angular/core";
+import { ActivatedRoute } from "@angular/router";
 @Component({
-  selector: 'app-artist',
-  templateUrl: './artist.component.html',
-  styles: [
-  ]
+  selector: "app-artist",
+  templateUrl: "./artist.component.html",
+  styles: [],
 })
-export class ArtistComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class ArtistComponent {
+  constructor(private router: ActivatedRoute) {}
 }
